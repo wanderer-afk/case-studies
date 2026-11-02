@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Project 1 - a study assistant that says &quot;I don&#x27;t know&quot; - Bailey Smith's projects</title>
+<title>Study assistant that says &quot;I don&#x27;t know&quot; - Bailey Smith's projects</title>
 <style>
 :root { --bg:#f7f5f0; --ink:#1d1d1f; --muted:#5b5b63; --accent:#1f5fa8; --card:#ffffff; --line:#e2dfd6; }
 @media (prefers-color-scheme: dark) {
@@ -25,8 +25,8 @@ th, td { text-align:left; padding:10px; border-bottom:1px solid var(--line); ver
 <body>
 <main>
 <p class="back"><a href="index.html">Back to all projects</a></p>
-<h1>Project 1 - a study assistant that says "I don't know"</h1>
-<p>Most chatbots answer every question, even when they have no basis for the answer. I wanted a study helper that only answers from my own class notes, and refuses when the notes don't cover the question.</p>
+<h1>Study assistant that says "I don't know"</h1>
+<p>Most chatbots answer every question, even when they have no basis for the answer. I wanted a study helper that only answers from my own notes, and refuses when the notes don't cover the question.</p>
 <h2>Who it's for</h2>
 <p>A learner who wants to ask questions of their own notes and trust the answer, because every answer points to the note it came from.</p>
 <h2>What I built</h2>
@@ -34,17 +34,17 @@ th, td { text-align:left; padding:10px; border-bottom:1px solid var(--line); ver
 1. <strong>Search:</strong> it splits my notes into small pieces and finds the pieces closest to each question.
 2. <strong>Answer:</strong> a local AI model writes the answer from those pieces only, with numbered citations like [1] [2].
 3. <strong>Refuse:</strong> if no piece is a close enough match, it says "Not in my notes" and never calls the model.</p>
-<p>The notes are cleaned before the assistant reads them. A check blocks any classmate's name, personal detail or private file path from getting in. The model runs on my PC through Ollama, so nothing is sent to the internet.</p>
+<p>The notes are cleaned before the assistant reads them. A check blocks names other than mine, personal details and private file paths from getting in. The model runs on my PC through Ollama, so nothing is sent to the internet.</p>
 <h2>Proof</h2>
 <ul>
 <li>Tuning set: 7 of 7 questions answered with a source, and 3 of 3 trap questions refused.</li>
 <li>Held-out set: 10 of 11 answered, and all 3 trap questions refused. This set was run once, on purpose, so the score is honest.</li>
-<li>Two copies were built from scratch on a new folder to check the setup works for someone else.</li>
+<li>Two copies were built from scratch in new folders to check the setup works for someone else.</li>
 <li>63 automated tests pass.</li>
 <li>Screenshot still to add: a real question with its citations, and a refused trap question.</li>
 </ul>
 <h2>Where it stands</h2>
-<p>Working on my PC. It's a bootcamp project, so the course material stays private. A web-page version runs locally and a Colab (a free online notebook) version gives the same answers on the same notes.</p>
+<p>Working on my PC. A web-page version runs locally, and a Colab (a free online notebook) version gives the same answers on the same notes.</p>
 <h2>What I'd change</h2>
 <ul>
 <li>The one held-out miss needs a closer look, so I know which kind of question the search gets wrong.</li>
