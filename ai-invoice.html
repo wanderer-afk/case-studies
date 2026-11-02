@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ai invoice - Bailey Smith's projects</title>
+<style>
+:root { --bg:#f7f5f0; --ink:#1d1d1f; --muted:#5b5b63; --accent:#1f5fa8; --card:#ffffff; --line:#e2dfd6; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg:#14151a; --ink:#ececf1; --muted:#a3a3ad; --accent:#7fb2ff; --card:#1d1f26; --line:#2d2f38; }
+}
+:root[data-theme="dark"] { --bg:#14151a; --ink:#ececf1; --muted:#a3a3ad; --accent:#7fb2ff; --card:#1d1f26; --line:#2d2f38; }
+body { background:var(--bg); color:var(--ink); font:17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; margin:0; }
+main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+a { color:var(--accent); }
+h1 { font-size:2rem; line-height:1.2; margin:0 0 8px; }
+h2 { font-size:1.25rem; margin:28px 0 8px; border-top:1px solid var(--line); padding-top:20px; }
+p, li { max-width:70ch; }
+.back { font-size:0.95rem; }
+table { width:100%; border-collapse:collapse; margin:12px 0; background:var(--card); }
+th, td { text-align:left; padding:10px; border-bottom:1px solid var(--line); vertical-align:top; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px; margin:12px 0; }
+</style>
+</head>
+<body>
+<main>
+<p class="back"><a href="index.html">Back to all projects</a></p>
+<h1>Ai invoice</h1>
+<p>Small business owners find out a bill is late when it's already too late. I wanted something that tells you every morning who hasn't paid, and writes the reminder before the due date.</p>
+<h2>Who it's for</h2>
+<p>Tradespeople and small owners who send invoices from Word, Excel or PDF, not from QuickBooks or Xero.</p>
+<h2>What I built</h2>
+<p>A tool that runs on the owner's own PC. It reads a folder of invoices, shows a morning "who owes me" list, and writes a day-before-due reminder in the owner's own words. It makes the draft and never sends it. The owner reads it and hits send.</p>
+<p>I looked into it first. The free reminders that exist only work inside accounting apps, so an owner who uses Word has nothing. I built it with Claude Code, which is an AI helper that works in the terminal. It's about 650 lines of code with 193 tests (small checks that the code does what it should).</p>
+<p>I plan to sell it as a setup service: $99 for the first three customers, then $149 to $299.</p>
+<h2>Proof</h2>
+<ul>
+<li>Three reviews have found and fixed 16 bugs.</li>
+<li>A read-only trial on my real Gmail and PayPal accounts (2026-09-17) found nobody owed me money, and it sent zero false reminders.</li>
+<li>Screenshot still to add: the morning list from the demo.</li>
+</ul>
+<h2>Where it stands</h2>
+<p>Built, but not yet sold. It hasn't been run on a clean Windows install, and I haven't signed a first customer. Five tradespeople were on my list to ask two questions. I haven't finished asking them.</p>
+<h2>What I'd change</h2>
+<ul>
+<li>If owners forget to mark invoices as paid, the list goes wrong. That's the biggest risk, and it's still open.</li>
+<li>I need one real person as customer number one before I build more.</li>
+</ul>
+</main>
+</body>
+</html>

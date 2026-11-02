@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Local AI Setup - Bailey Smith's projects</title>
+<style>
+:root { --bg:#f7f5f0; --ink:#1d1d1f; --muted:#5b5b63; --accent:#1f5fa8; --card:#ffffff; --line:#e2dfd6; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg:#14151a; --ink:#ececf1; --muted:#a3a3ad; --accent:#7fb2ff; --card:#1d1f26; --line:#2d2f38; }
+}
+:root[data-theme="dark"] { --bg:#14151a; --ink:#ececf1; --muted:#a3a3ad; --accent:#7fb2ff; --card:#1d1f26; --line:#2d2f38; }
+body { background:var(--bg); color:var(--ink); font:17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; margin:0; }
+main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+a { color:var(--accent); }
+h1 { font-size:2rem; line-height:1.2; margin:0 0 8px; }
+h2 { font-size:1.25rem; margin:28px 0 8px; border-top:1px solid var(--line); padding-top:20px; }
+p, li { max-width:70ch; }
+.back { font-size:0.95rem; }
+table { width:100%; border-collapse:collapse; margin:12px 0; background:var(--card); }
+th, td { text-align:left; padding:10px; border-bottom:1px solid var(--line); vertical-align:top; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px; margin:12px 0; }
+</style>
+</head>
+<body>
+<main>
+<p class="back"><a href="index.html">Back to all projects</a></p>
+<h1>Free Local AI Setup</h1>
+<p>Every simple AI job costs money if I always use the paid service. So I set it up so the simple jobs run on free tools, and the paid AI is saved for the hard thinking.</p>
+<h2>Who it's for</h2>
+<p>Anyone who wants to cut AI costs without losing quality on the hard tasks.</p>
+<h2>What I built</h2>
+<ul>
+<li>A local model called <code>gemma4:26b</code>, running on my own PC through Ollama (a program that runs AI models on your computer). It works offline with no usage limit.</li>
+<li>A free hosted model from NVIDIA's trial, with 82 free models to choose from.</li>
+<li>A connector called claude-sidekick that lets Claude call the local model for drafting, summaries and simple code.</li>
+</ul>
+<h2>Proof</h2>
+<ul>
+<li>I confirmed all three pieces worked on 2026-09-17.</li>
+<li>Screenshot still to add: the connected tools list in Claude.</li>
+</ul>
+<h2>Where it stands</h2>
+<p>Working on my PC. The hosted-model key only exists on the cloud copy, so I need to set it up again here.</p>
+<h2>What I'd change</h2>
+<ul>
+<li>I haven't run a full security check on the connector. I only did a basic README check. I need a full one before I use it a lot.</li>
+<li>The config file sits in a hidden folder that the app's own button doesn't open. Next time I'll check the real file path first.</li>
+</ul>
+</main>
+</body>
+</html>

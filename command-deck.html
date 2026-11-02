@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Command Deck - Bailey Smith's projects</title>
+<style>
+:root { --bg:#f7f5f0; --ink:#1d1d1f; --muted:#5b5b63; --accent:#1f5fa8; --card:#ffffff; --line:#e2dfd6; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg:#14151a; --ink:#ececf1; --muted:#a3a3ad; --accent:#7fb2ff; --card:#1d1f26; --line:#2d2f38; }
+}
+:root[data-theme="dark"] { --bg:#14151a; --ink:#ececf1; --muted:#a3a3ad; --accent:#7fb2ff; --card:#1d1f26; --line:#2d2f38; }
+body { background:var(--bg); color:var(--ink); font:17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; margin:0; }
+main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+a { color:var(--accent); }
+h1 { font-size:2rem; line-height:1.2; margin:0 0 8px; }
+h2 { font-size:1.25rem; margin:28px 0 8px; border-top:1px solid var(--line); padding-top:20px; }
+p, li { max-width:70ch; }
+.back { font-size:0.95rem; }
+table { width:100%; border-collapse:collapse; margin:12px 0; background:var(--card); }
+th, td { text-align:left; padding:10px; border-bottom:1px solid var(--line); vertical-align:top; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px; margin:12px 0; }
+</style>
+</head>
+<body>
+<main>
+<p class="back"><a href="index.html">Back to all projects</a></p>
+<h1>Command Deck</h1>
+<p>Desk setups are a big hobby. Command Deck is a themed check-in screen for your desktop: it looks cool, and you spend about 10 seconds on it each day.</p>
+<h2>Who it's for</h2>
+<p>People who work from home and like sci-fi-looking desks.</p>
+<h2>What I built</h2>
+<p>A themed desktop dashboard, starting from my Arasaka Tower dashboard. It runs offline as an installable web app (a PWA, which is a website you can install like an app). Your data can be backed up in an encrypted file, using the same kind of locking that banks use, with 36 tests. The importers that bring in data from other apps have 106 tests. A preview version (v3) is built.</p>
+<h2>What I found (2026-09-26)</h2>
+<p>I had four research agents check the market. Here's what they found:
+- Free dashboards already do the clock, weather and to-dos. Themed looks sell for $3 to $18 one time.
+- Some sales sites don't allow digital downloads, so I still need to pick where to sell.
+- The weather source has to be free for commercial use. I have two options, and I still need to check them.
+- Nothing copyrighted can ship. A scan tool checks for it.</p>
+<h2>Proof</h2>
+<ul>
+<li>The offline app and the encrypted backup both work, with tests.</li>
+<li>Screenshot still to add: the first themed screen.</li>
+</ul>
+<h2>Where it stands</h2>
+<p>Preview built, not sold. I still need to pick where to sell and check the weather source.</p>
+<h2>What I'd change</h2>
+<ul>
+<li>I haven't checked the weather source for commercial use yet. That has to happen before anything ships.</li>
+<li>I need a sales page and a price before anyone can buy it.</li>
+</ul>
+</main>
+</body>
+</html>
